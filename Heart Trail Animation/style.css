@@ -5,7 +5,7 @@ body{
 }
 
 span{
-  background: url(https://www.iconfinder.com/icons/2530804/general_heart_heart%20beat_heart%20disease_heart%20rate_heart%20shape_office_icon);
+  background: url("https://www.iconfinder.com/icons/2530804/general_heart_heart%20beat_heart%20disease_heart%20rate_heart%20shape_office_icon");
   width: 100px;
 	height: 100px;
 	position: absolute;
