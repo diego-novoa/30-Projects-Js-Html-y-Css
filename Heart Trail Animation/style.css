@@ -5,10 +5,11 @@ body{
 }
 
 span{
-  background: url("https://www.iconfinder.com/icons/2530804/general_heart_heart%20beat_heart%20disease_heart%20rate_heart%20shape_office_icon");
+  background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-1024.png");
   width: 100px;
 	height: 100px;
 	position: absolute;
+	pointer-events: none;
 	background-size: cover;
 	left: 50%;
 	top: 50%;
