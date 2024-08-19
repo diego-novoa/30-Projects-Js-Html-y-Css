@@ -1,10 +1,10 @@
-const StartElemet = document.getElementById("Start");
-const StopElemet = document.getElementById("Stop");
-const ResetElemet = document.getElementById("Reset");
-const TimerElemet = document.getElementById("Timer");
+const startEl = document.getElementById("start");
+const stopEl = document.getElementById("stop");
+const resetEl = document.getElementById("reset");
+const timerEl = document.getElementById("timer");
 
 let interval;
-let timeLeft=1500;
+let timeLeft = 1500;
 
 function updateTimer() {
   let minutes = Math.floor(timeLeft / 60);
@@ -16,7 +16,7 @@ function updateTimer() {
   timerEl.innerHTML = formattedTime;
 }
 
-function StartTimer() {
+function startTimer() {
   interval = setInterval(() => {
     timeLeft--;
     updateTimer();
@@ -28,14 +28,15 @@ function StartTimer() {
     }
   }, 1000);
 }
-function StopTimer() {
+function stopTimer() {
   clearInterval(interval);
 }
-function ResetTimer() {
+function resetTimer() {
   clearInterval(interval);
   timeLeft = 1500;
   updateTimer();
 }
-StartElemet.addEventListener("click", StartTimer);
-StopElemet.addEventListener("click", StopTimer)
-ResetElemet.addEventListener("click", ResetTimer)
+
+startEl.addEventListener("click", startTimer);
+stopEl.addEventListener("click", stopTimer);
+resetEl.addEventListener("click", resetTimer);

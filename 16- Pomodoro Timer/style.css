@@ -22,6 +22,7 @@ button {
   padding: 10px 20px;
   margin: 10px;
   color: white;
+
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -33,14 +34,14 @@ button:hover {
   opacity: 0.7;
 }
 
-#Start {
+#start {
   background-color: #27ae60;
 }
 
-#Stop {
+#stop {
   background-color: #c0392b;
 }
 
-#Reset {
+#reset {
   background-color: #7f8c8d;
 }
