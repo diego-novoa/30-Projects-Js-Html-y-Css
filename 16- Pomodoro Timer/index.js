@@ -1,7 +1,7 @@
-const startEl = document.getElementById("start");
-const stopEl = document.getElementById("stop");
-const resetEl = document.getElementById("reset");
-const timerEl = document.getElementById("timer");
+const startElement = document.getElementById("start");
+const stopElement = document.getElementById("stop");
+const resetElement = document.getElementById("reset");
+const timerElement = document.getElementById("timer");
 
 let interval;
 let timeLeft = 1500;
@@ -37,6 +37,6 @@ function resetTimer() {
   updateTimer();
 }
 
-startEl.addEventListener("click", startTimer);
-stopEl.addEventListener("click", stopTimer);
-resetEl.addEventListener("click", resetTimer);
+startElement.addEventListener("click", startTimer);
+stopElement.addEventListener("click", stopTimer);
+resetElement.addEventListener("click", resetTimer);
